@@ -1,0 +1,30 @@
+{
+  "name": "@2022amallick/print-colors",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:watch": "vitest --watch --reporter=verbose",
+    "test": "vitest run",
+    "build": "rm -rf dist && tsc"
+  },
+  "keywords": [
+    "colors",
+    "console",
+    "print"
+  ],
+  "author": "aadilmallick",
+  "license": "ISC",
+  "description": "A package for easily printing with colors in node",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0"
+  },
+  "type": "module"
+}
