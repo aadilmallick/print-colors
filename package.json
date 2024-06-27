@@ -1,7 +1,7 @@
 {
   "name": "@2022amallick/print-colors",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "dist/index.js",
   "scripts": {
     "test:watch": "vitest --watch --reporter=verbose",
     "test": "vitest run",
