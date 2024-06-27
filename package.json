@@ -1,6 +1,6 @@
 {
   "name": "@2022amallick/print-colors",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/cjs/index.js",
   "scripts": {
     "test:watch": "vitest --watch --reporter=verbose",
@@ -21,7 +21,7 @@
     "dist"
   ],
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/cjs/index.d.ts",
   "devDependencies": {
     "@types/node": "^20.14.9",
     "tsx": "^4.15.7",
