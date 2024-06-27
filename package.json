@@ -1,11 +1,13 @@
 {
   "name": "@2022amallick/print-colors",
-  "version": "1.0.2",
-  "main": "dist/index.js",
+  "version": "1.0.3",
+  "main": "dist/cjs/index.js",
   "scripts": {
     "test:watch": "vitest --watch --reporter=verbose",
     "test": "vitest run",
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc --outDir dist/esm",
+    "build:cjs": "tsc --module CommonJs --outDir dist/cjs"
   },
   "keywords": [
     "colors",
@@ -18,7 +20,7 @@
   "files": [
     "dist"
   ],
-  "module": "dist/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
     "@types/node": "^20.14.9",
